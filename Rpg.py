@@ -24,7 +24,12 @@ if choix == "Monstre":
     print(f"point de vie : {pv}")
     print(f"niveau : {niveau}")
     print("--------------------")
+    print(f"Voici les caractéristiques de ton adversaire le Berserker:")
+    print(f"nom : {guerrier1.nom}")
+    print(f"point de vie : {guerrier1.pv}")
+    print(f"niveau : {guerrier1.niveau}")
     monstre1.attaquer(guerrier1)
+        #guerrier1.pv -= 20
 
 if choix == "Guerrier":
     monstre1 = Monstre("Gorgon", 100, 25)
