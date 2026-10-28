@@ -9,14 +9,26 @@ print("Tu as 2 choix : Monstre et Guerrier.")
 choix = input("Quel est ton choix ?")
 
 if choix == "Monstre":
-    guerrier1 = Guerrier("Charles III", 100, 17)
-    nom = input("Cher monstre. Quel est ton nom ?")
-    monstre1 = Monstre(nom, 150, 30)
+    guerrier1 = Guerrier("Charles III", 100, 25)
+    nom = input("Cher monstre, quel est ton nom ?")
+    pv = 100
+    niveau = 25
+    monstre1 = Monstre(nom, pv, niveau)
+    print(f"Salutations, créature des ténèbres! Voici tes caractéristiques:")
+    print(f"nom : {nom}")
+    print(f"point de vie : {pv}")
+    print(f"niveau : {niveau}")
     monstre1.attaquer(guerrier1)
 
 if choix == "Guerrier":
-    monstre1 = Monstre("Gorgon", 150, 30)
-    nom = input("Cher guerrier. Quel est ton nom ?")
-    guerrier1 = Guerrier(nom, 100, 17)
+    monstre1 = Monstre("Gorgon", 100, 25)
+    nom = input("Cher guerrier, Quel est ton nom ?")
+    pv = 100
+    niveau = 25
+    guerrier1 = Guerrier(nom, pv, niveau)
+    print(f"Bien le bonjour valeureux combattant, voici tes caractéristiques:")
+    print(f"nom : {nom}")
+    print(f"point de vie : {pv}")
+    print(f"niveau : {niveau}")
     guerrier1.attaquer(monstre1)
 
