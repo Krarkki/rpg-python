@@ -32,9 +32,12 @@ if choix == "Guerrier":
     pv = 100
     niveau = 25
     guerrier1 = Guerrier(nom, pv, niveau)
+    print("--------------------")
     print(f"Bien le bonjour valeureux combattant, voici tes caractéristiques:")
+    print("--------------------")
     print(f"nom : {nom}")
     print(f"point de vie : {pv}")
     print(f"niveau : {niveau}")
+    print("--------------------")
     guerrier1.attaquer(monstre1)
 
