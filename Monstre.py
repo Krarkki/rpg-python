@@ -8,6 +8,7 @@ class Monstre:
 
     def attaquer(self, guerrier):
         print(f"Le Monstre {self.nom} lance une attaque contre le Guerrier {guerrier.nom}.")
+        print(f"Le Berserker {guerrier.nom} perd 20 points de pv.")
 
     def defendre(self):
         print(f"Le Monstre {self.nom} a choisit de se défendre!")
