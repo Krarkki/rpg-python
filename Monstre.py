@@ -7,8 +7,8 @@ class Monstre:
         self.niveau = niveau
 
     def attaquer(self, guerrier):
-        print(f"Le Monstre {self.nom} lance une attaque contre ton assaillant, le Berserker {guerrier.nom}.")
-        print(f"Il perd 20 points de pv.")
+        print(f"Le Monstre {self.nom} lance une attaque contre son assaillant, le Berserker {guerrier.nom}.")
+        print(f"Tu perd 20 points de pv.")
 
     def defendre(self):
         print(f"Le Monstre {self.nom} a choisit de se défendre!")
