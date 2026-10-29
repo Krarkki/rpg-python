@@ -25,7 +25,7 @@ print(f"nom : {monstre1.nom}")
 print(f"point de vie : {monstre1.pv}")
 print(f"niveau : {monstre1.niveau}")
 print("--------------------")
-while monstre1.pv and guerrier1.pv >= 0:
+while monstre1.pv > 0 and guerrier1.pv > 0:
     monstre1.attaquer(guerrier1)
     print("La créature vient de t'attaquer. Que souhaites-tu faire?")
     print("--------------------")
