@@ -27,7 +27,10 @@ print(f"niveau : {monstre1.niveau}")
 print("--------------------")
 while monstre1.pv > 0 and guerrier1.pv > 0:
     monstre1.attaquer(guerrier1)
-    print("La créature vient de t'attaquer. Que souhaites-tu faire?")
+    guerrier1.pv -= 20
+    print("La créature vient de t'attaquer. Comment réagis-tu?")
+    print(f"Voici tes points de vie: {guerrier1.pv}.")
+    print(f"Voici celles du monstre: {monstre1.pv}.")
     print("--------------------")
     print("1. Attaquer. (il perd 20 de pv.)")
     print("2. Défendre. (Tu perds 10 de pv et tu attaques en retour et la créature perd également 10 de pv.)")
